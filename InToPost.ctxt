@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=InToPost
+comment0.text=\n\ Goes\ through\ the\ parsed\ collection\ to\ rearrange\ items\ into\ a\ postfix\n\ notation.\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=input
+comment1.target=java.util.Deque\ infixToPostfix(java.lang.String)
+comment1.text=\n\ Converts\ a\ parsed\ Deque\ into\ one\ with\ a\ postfix\ notation,\ like\n\ \ \ \ \ \ \ \ \ \ a\ b\ +\ \ \ \ \ \ \ \ \ \ \ instead\ of\ \ \ \ \ \ \ \ \ \ \ \ \ \ a\ +\ b.\n\ This\ helps\ the\ computer\ to\ understand\ priority\ where\ mathematical\n\ operations\ are\ concerned,\ and\ easier\ to\ compute.\n\ @param\ input\ the\ String,\ which\ should\ be\ presented\ as\ a\ Polynomial\n\ @return\ a\ Deque\ containing\ the\ postfix\ notation\ of\ the\ Polynomial\n
+comment2.params=
+comment2.target=void\ test()
+comment2.text=\n\ Tests\ the\ postfix\ method\n
+numComments=3

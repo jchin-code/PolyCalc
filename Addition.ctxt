@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Addition
+comment0.text=\n\ Class\ containing\ information\ for\ Addition\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=Addition()
+comment1.text=\n\ Creates\ Addition\ objects\ with\ the\ priority\ and\ sign\ embedded\n
+comment2.params=o
+comment2.target=boolean\ isAdd(java.lang.Object)
+comment2.text=\n\ Checks\ if\ Object\ is\ Additon\ Object\ by\ comparing\ signs.\n\ @param\ o\ an\ Object,\ more\ than\ likely\ one\ that\ can\ be\ downcasted\ to\ a\n\ char\n\ @return\ true\ if\ object\ has\ the\ sign\ of\ an\ Addition\ Object;\ false\n\ otherwise\n
+numComments=3

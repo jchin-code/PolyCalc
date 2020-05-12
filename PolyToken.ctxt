@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=PolyToken
+comment0.text=\n\ Contains\ all\ of\ the\ different\ states\ for\ the\ finite\ state\ machine,\ in\ order\n\ to\ properly\ parse\ a\ string\ into\ operators\ and\ operands\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=isGood
+comment1.target=PolyToken(boolean)
+comment1.text=Assigns\ boolean\ to\ Object.
+comment2.params=
+comment2.target=boolean\ isGood()
+comment2.text=Indication\ the\ boolean\ for\ a\ state\ @return\ the\ boolean\ of\ state\ called
+numComments=3

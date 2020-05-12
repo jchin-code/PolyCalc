@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=PolyCalc
+comment0.text=\n\ The\ main\ class\ for\ the\ calculator.\ The\ main\ method\ is\ located\ here,\ and\n\ this\ calculator\ has\ been\ implemented\ using\ the\ Graphical\ User\ Interface\n\ (GUI).\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ Runs\ the\ full\ calculator\ as\ a\ GUI.\ Both\ a\ File\ Mode\ and\ Interactive\n\ Mode\ are\ available\ to\ the\ user.\n\ @param\ args\ the\ arguments\n
+comment2.params=
+comment2.target=void\ interactMode()
+comment2.text=\n\ The\ method\ for\ the\ interactive\ mode.\ Offers\ a\ field\ to\ instantly\n\ calculate\ Polynomials.\ Interactive\ mode\ and\ file\ mode\ do\ not\ share\n\ the\ same\ memory.\n
+comment3.params=e
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=
+comment4.target=void\ fileMode()
+comment4.text=The\ method\ for\ the\ file\ mode.\ Offers\ a\ button\ to\ browse\ for\ a\ file\ the\n\ user\ would\ like\ to\ run.\ Interactive\ mode\ and\ file\ mode\ do\ not\ share\n\ the\ same\ memory.\n
+comment5.params=e
+comment5.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=6

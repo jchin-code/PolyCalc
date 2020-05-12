@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LineRead
+comment0.text=\n\ Reads\ Strings\ of\ all\ kinds\ and\ then\ decides\ how\ to\ deal\ with\ them\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=LineRead()
+comment1.text=\n\ Constructor\ containing\ the\ memory\ used\ to\ call\ back\ Polynomials\n\ if\ necessary\n
+comment2.params=input
+comment2.target=java.lang.String\ lineRead(java.lang.String)
+comment2.text=\n\ Reads\ inputs\ of\ Polynomials,\ variables\ and\ equations\ and\ determines\n\ how\ to\ handle\ them.\n\ @param\ input\ a\ String,\ which\ can\ be\ a\ Polynomial,\ variables\ in\ place\n\ of\ Polynomials,\ or\ equations\ (declarations)\ will\ would\ be\ stored\ in\n\ memory.\n\ @return\ a\ String\ representing\ the\ complete\ evaluation\n
+comment3.params=
+comment3.target=void\ test()
+comment3.text=\n\ Tests\ the\ lineRead\ method\n
+numComments=4

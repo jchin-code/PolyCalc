@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Division
+comment0.text=\n\ Class\ containing\ information\ for\ Division\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=Division()
+comment1.text=\n\ Creates\ Division\ objects\ with\ the\ priority\ and\ sign\ embedded\n
+comment2.params=o
+comment2.target=boolean\ isDiv(java.lang.Object)
+comment2.text=\n\ Checks\ if\ Object\ is\ Division\ Object\ by\ comparing\ signs.\n\ @param\ o\ a\ Object,\ more\ than\ likely\ one\ that\ can\ be\ downcasted\ to\ a\n\ char\n\ @return\ true\ if\ object\ has\ the\ sign\ of\ an\ Division\ Object;\ false\n\ otherwise\n
+numComments=3

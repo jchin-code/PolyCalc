@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Operator
+comment0.text=\n\ Super\ class\ for\ legitimate\ operators\ of\ Polynomials.\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=
+comment1.target=int\ getPriority()
+comment1.text=\n\ Gets\ the\ priority\ of\ the\ Operator.\n\ @return\ the\ priority\ of\ the\ Operator.\n
+comment2.params=
+comment2.target=char\ getSign()
+comment2.text=\n\ Gets\ the\ sign\ of\ the\ Operator.\n\ @return\ the\ sign\ of\ the\ Operator.\n
+comment3.params=p1\ p2
+comment3.target=Polynomial\ operate(Polynomial,\ Polynomial)
+comment3.text=\n\ Operates\ on\ two\ Polynomials\n\ @param\ p1\ the\ first\ Polynomial\n\ @param\ p2\ the\ second\ Polynomial\n\ @return\ the\ result\ of\ the\ operation\ on\ the\ two\ Polynomials\n
+numComments=4

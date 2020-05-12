@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ExprEval
+comment0.text=\n\ Evaluates\ all\ expressions\ passed\ into\ it\n\n\ @author\ Jordan\ Chin\n\ @version\ 1.0\n
+comment1.params=input
+comment1.target=Polynomial\ eval(java.lang.String)
+comment1.text=\n\ Evaluates\ an\ expression\ passed\ as\ an\ argument.\n\ @param\ input\ a\ String,\ which\ should\ be\ in\ the\ form\ of\ a\ Polynomial\n\ @return\ the\ Polynomial\ result\ from\ the\ evaluation\n
+comment2.params=
+comment2.target=void\ test()
+comment2.text=\n\ Tests\ the\ evaluation\ method\ in\ this\ class\n
+numComments=3
