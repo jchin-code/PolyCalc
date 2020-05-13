@@ -15,7 +15,7 @@ public class PolyFsm
      * @return a Deque of tokens, all casted as Objects; null if an error
      * exists
      */
-    public static Deque tokenList(String input){
+    public Deque tokenList(String input){
         //Declaration and initialisation of variables.
         //NOTE: exp should NEVER be negative and coeff does not need to be
         //negative since it is handled as an Operator. THEREFORE, an negative
@@ -375,5 +375,7 @@ public class PolyFsm
     /**
      * Tests the Finite State Machine
      */
-    public static void test(){System.out.println(tokenList("x^2+3.0+2.0x^2+x")); }
+    public static void test(){
+        PolyFsm a = new PolyFsm();
+        System.out.println(a.tokenList("x^2+3.0+2.0x^2+x")); }
 }

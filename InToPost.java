@@ -18,7 +18,8 @@ public class InToPost
      */
     public static Deque infixToPostfix(String input)
     {
-        Deque newList = new ArrayDeque(), fsmList = PolyFsm.tokenList(input);
+        PolyFsm fsm = new PolyFsm();
+        Deque newList = new ArrayDeque(), fsmList = fsm.tokenList(input);
         Deque opList = new ArrayDeque();
         Object token;
         Iterator iter;
