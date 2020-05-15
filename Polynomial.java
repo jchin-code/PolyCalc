@@ -173,8 +173,9 @@ public class Polynomial
     public static void main(String[] args){
         Polynomial p = new Polynomial(1,2); //p = x^2
         Polynomial q = new Polynomial(3,0); //q = 3
-
+        Polynomial r = new Polynomial(0,3);
         Polynomial c = p.add(q);
+        System.out.println(r);
         System.out.println("Add: \nc: " +c);
         System.out.println("p: " +p);
         System.out.println("q: " +q+"\n");
@@ -215,20 +216,20 @@ public class Polynomial
         //add the coefficients and add it to the result TreeMap. Otherwise,
         //add the coefficient in a to the result TreeMap.
         //Note: If any coefficient result is 0, it will not be added to the
-        //TreeMap.
+        //TreeMap, unless it is 0 itself.
         for (Integer exp : aExp)
             if (b.containsKey(exp)){
                 aVal = a.get(exp);
                 bVal = b.get(exp);
                 add = new Float(aVal+bVal);
-                if (add==0)
+                if (add==0&&exp!=0)
                     continue;
                 c.put(exp,add);
             }
             else{
                 aVal =  a.get(exp);
                 add = new Float(aVal);
-                if (add==0)
+                if (add==0&&exp!=0)
                     continue;
                 c.put(exp,add);
             }
@@ -236,12 +237,12 @@ public class Polynomial
         //For each exponent in b, if it is not in a, add it to the result
         //TreeMap.
         //Note: If any coefficient result is 0, it will not be added to the
-        //TreeMap
+        //TreeMap, unless it is 0 itself
         for (Integer exp : bExp)
             if (!a.containsKey(exp)){
                 bVal = b.get(exp);
                 add = new Float(bVal);
-                if (add==0)
+                if (add==0&&exp!=0)
                     continue;
                 c.put(exp,add);
             }
@@ -271,20 +272,20 @@ public class Polynomial
         //subtract the coefficients and add it to the result TreeMap. 
         //Otherwise, add the coefficient in a to the result TreeMap.
         //Note: If any coefficient result is 0, it will not be added to the
-        //TreeMap.
+        //TreeMap, unless it is 0 itself.
         for (Integer exp : aExp)
             if (b.containsKey(exp)){
                 aVal = a.get(exp);
                 bVal = b.get(exp);
                 sub = new Float(aVal-bVal);
-                if (sub==0)
+                if (sub==0&&exp!=0)
                     continue;
                 c.put(exp,sub);
             }
             else{
                 aVal = a.get(exp);
                 sub = new Float(aVal);
-                if (sub==0)
+                if (sub==0&&exp!=0)
                     continue;
                 c.put(exp,sub);
             }
@@ -292,12 +293,12 @@ public class Polynomial
         //For each exponent in b, if it is not in a, add the negative 
         //coefficient to the result TreeMap.
         //Note: If any coefficient result is 0, it will not be added to the
-        //TreeMap 
+        //TreeMap, unless it is 0 itself 
         for (Integer exp : bExp)
             if (!a.containsKey(exp)){
                 bVal = b.get(exp);
                 sub=new Float(-bVal);
-                if (sub==0)
+                if (sub==0&&exp!=0)
                     continue;
                 c.put(exp,sub);
             }
@@ -333,7 +334,7 @@ public class Polynomial
                 aVal = a.get(exp);
                 bVal = b.get(bEx);
                 mul = new Float(aVal*bVal);
-                if (mul==0)
+                if (mul==0&&exp!=0)
                     continue;
                 addInt = new Integer(exp+bEx);
                 tem.put(addInt,mul);
@@ -359,6 +360,9 @@ public class Polynomial
         //checks if divisor is zero; if it is, return null
         if (d.isZero())
             return null;
+        //checks if the dividend is zero: if it is, return zero polynomial
+        if (this.isZero())
+            return new Polynomial(0,0);
         //Extract TreeMap and other variables from Polynomials
         TreeMap<Integer,Float> r = remain.getPoly(), b = poly.getPoly();
         Integer bHighKey = b.firstKey(), remKey = r.firstKey();
