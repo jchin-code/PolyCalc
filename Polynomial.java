@@ -45,9 +45,46 @@ public class Polynomial
         //TreeMap.
         poly = new TreeMap<Integer,Float>(Collections.reverseOrder());
         for (Map.Entry<Integer,Float> ent : a.poly.entrySet())
-            poly.put(ent.getKey(),ent.getValue());
+            poly.put(new Integer(ent.getKey()),
+            new Float(ent.getValue()));
     }
 
+    public Polynomial(String str){
+        poly = new TreeMap<Integer,Float>(Collections.reverseOrder());
+        int i = 0, inputLen = str.length(), exp = 0;
+        String coeffStr, expStr;
+        coeffStr = expStr = "";
+        float coeff = 0;
+        int indexOfX = str.indexOf('x'),indexOfCarat = str.indexOf('^');
+        switch (indexOfX){
+            case -1:
+            coeff = new Float(str);
+            break;
+            case 0:
+            coeff = 1;
+            break;
+            default:
+            coeffStr = str.substring(0,indexOfX);
+            coeff = new Float(coeffStr);
+            break;
+        }
+        
+        switch (indexOfCarat){
+            case -1:
+            if (indexOfX==-1)
+                exp = 0;
+            else
+                exp = 1;
+            break;
+            default:
+            expStr = str.substring(indexOfCarat+1,inputLen);
+            exp = new Integer(expStr);
+            break;
+        }
+        
+        poly.put(exp,coeff);
+    }
+    
     /**
      * Tests other Polynomial objects.
      */

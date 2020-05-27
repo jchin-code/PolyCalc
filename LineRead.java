@@ -28,6 +28,7 @@ public class LineRead
     public String lineRead(String input){
         Polynomial res;
         String[] polyParse = input.split("=+"), keyParse;
+        ExprEval exprEval;
         if (polyParse.length==0||polyParse.length>2)
             return null;
         String poly, keyStr, result, output;
@@ -52,7 +53,8 @@ public class LineRead
                     result += tok;
         }
         
-        res = ExprEval.eval(result); //could give null
+        exprEval = new ExprEval(result);
+        res = exprEval.eval(); //could give null
         if (res==null){
             return null;
         }
